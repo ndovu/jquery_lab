@@ -11,4 +11,4 @@ var promptAndPlay = function() {
 };
 
 // Get things going.
-promptAndPlay();
+// promptAndPlay();
