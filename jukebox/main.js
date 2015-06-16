@@ -8,7 +8,12 @@
 var playButton = function() {
   var songString = prompt("Enter a song to play: ");
   var song = parseSong(songString);
-  playSong(song, 500);
+  $('#btn-play').html('Playing...');
+  $('#btn-play').attr('disabled', true);
+  playSong(song, 500, function() {
+    $('#btn-play').html('Play');
+    $('#btn-play').attr('disabled', false); 
+  });
 };
 
 $(document).on('ready', function() {
