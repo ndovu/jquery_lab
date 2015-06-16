@@ -1,4 +1,5 @@
 $(document).on('ready', function() {
+  // all answers for the events in class exercises
   $('.shape').on('click', function() {
     console.log('shape clicked');
   });
