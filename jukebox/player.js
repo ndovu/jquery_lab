@@ -146,7 +146,7 @@ var playTone = function(frequency, duration, audioContext) {
 
     var gain = audioContext.createGain();
     gain.gain.setValueAtTime(0.0, startTime);
-    gain.gain.linearRampToValueAtTime(10/i, startTime + 0.01);
+    gain.gain.linearRampToValueAtTime(0.1/i, startTime + 0.01);
     gain.gain.linearRampToValueAtTime(0, startTime + duration * 0.75);
 
     osc.connect(gain);
